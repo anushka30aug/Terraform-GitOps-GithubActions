@@ -10,11 +10,11 @@ terraform {
     }
   }
 
-  backend "s3" {
-    bucket         = "my-terraform-state-bucket"
-    key            = "gitops/terraform.tfstate"
-    region         = "ap-south-1"
-    dynamodb_table = "terraform-lock"
+   backend "s3" {
+    bucket       = "my-terraform-state-anushka-001"
+    key          = "gitops/terraform.tfstate"
+    region       = "ap-south-1"
+    use_lockfile = true
   }
 
 }
