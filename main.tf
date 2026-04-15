@@ -2,11 +2,11 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-098e39bafa7e7303d"
-  instance_type = "t2.micro"
+# resource "aws_instance" "example" {
+#   ami           = "ami-098e39bafa7e7303d"
+#   instance_type = "t2.micro"
 
-  tags = {
-    Name = "GitOps-Instance"
-  }
-}
+#   tags = {
+#     Name = "GitOps-Instance"
+#   }
+# }
